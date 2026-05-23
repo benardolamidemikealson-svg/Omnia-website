@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omnia | Digital Solutions</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #0f172a; color: #f8fafc; margin: 0; padding: 0; text-align: center; }
-        header { padding: 80px 20px; background: linear-gradient(135deg, #1e1b4b, #0f172a); }
-        h1 { font-size: 3rem; margin-bottom: 10px; color: #38bdf8; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #0f172a; color: #f8fafc; margin: 0; padding: 0; }
+        header { padding: 80px 20px; background: linear-gradient(135deg, #1e1b4b, #0f172a); text-align: center; }
+        h1 { font-size: 3rem; margin-bottom: 10px; color: #38bdf8; margin-top: 0; }
         .tagline { font-size: 1.3rem; color: #94a3b8; font-weight: 300; }
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        .form-section { background-color: #1e293b; padding: 30px; border-radius: 12px; margin-bottom: 60px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        .form-section { background-color: #1e293b; padding: 30px; border-radius: 12px; margin-bottom: 60px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); text-align: center; }
         .form-section h2 { margin-top: 0; color: #f1f5f9; }
         .form-group { display: flex; max-width: 500px; margin: 20px auto 0 auto; gap: 10px; }
         input[type="email"] { flex: 1; padding: 12px; border-radius: 6px; border: 1px solid #475569; background-color: #0f172a; color: #fff; font-size: 1rem; }
         button { background-color: #38bdf8; color: #0f172a; border: none; padding: 12px 24px; font-weight: bold; border-radius: 6px; cursor: pointer; font-size: 1rem; transition: 0.2s; }
         button:hover { background-color: #0ea5e9; }
-        .portfolio-title { font-size: 2rem; margin-bottom: 30px; color: #f1f5f9; }
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; text-align: left; }
+        .portfolio-title { font-size: 2.2rem; margin-bottom: 10px; color: #f1f5f9; text-align: center; }
+        .portfolio-subtitle { text-align: center; color: #94a3b8; margin-bottom: 40px; font-size: 1.1rem; }
+        .category-title { font-size: 1.5rem; color: #38bdf8; margin: 40px 0 20px 0; border-left: 4px solid #38bdf8; padding-left: 15px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
         @media(max-width: 768px) { .grid { grid-template-columns: 1fr; } .form-group { flex-direction: column; } }
-        .card { background-color: #1e293b; border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid #38bdf8; }
-        .card h3 { margin-top: 0; color: #f1f5f9; font-size: 1.4rem; }
-        .card p { color: #94a3b8; line-height: 1.6; }
-        .badge { background-color: #334155; color: #38bdf8; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; display: inline-block; margin-bottom: 15px; }
+        .card { background-color: #1e293b; border-radius: 12px; padding: 25px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); display: flex; flex-direction: column; justify-content: space-between; }
+        .card-content h3 { margin-top: 0; color: #f1f5f9; font-size: 1.3rem; margin-bottom: 10px; }
+        .card-content p { color: #94a3b8; line-height: 1.6; font-size: 0.95rem; margin: 0; }
+        .badge { background-color: #334155; color: #38bdf8; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; display: inline-block; margin-bottom: 15px; width: fit-content; }
     </style>
 </head>
 <body>
@@ -36,7 +38,7 @@
         <!-- Waitlist / Subscription Section -->
         <div class="form-section">
             <h2>Join the Waitlist & Subscribe</h2>
-            <p>Be the first to get access to our tools designed to make everyday life easier.</p>
+            <p>Be the first to get access to our tools and solutions designed to simplify your digital ecosystem.</p>
             <div class="form-group">
                 <input type="email" placeholder="Enter your email address" required>
                 <button type="button">Join Now</button>
@@ -45,25 +47,66 @@
 
         <!-- Portfolio Section -->
         <h2 class="portfolio-title">Our Digital Developments Portfolio</h2>
+        <p class="portfolio-subtitle">Explore our diverse ecosystem of technical builds, trading strategies, and growth solutions.</p>
+        
+        <!-- CATEGORY 1 -->
+        <div class="category-title">Digital Commerce & Web Solutions</div>
         <div class="grid">
-            
-            <!-- Project 1 -->
             <div class="card">
-                <span class="badge">Restaurant App Engine</span>
-                <h3>Aduke Olowosibi Abula Joint App</h3>
-                <p>A smart, frictionless mobile development that changes how customers dine. Features integrated digital menu browsing, table ordering, and instant scan-to-pay functionality to entirely eliminate waiting times.</p>
+                <div class="card-content">
+                    <span class="badge">Hospitality Tech</span>
+                    <h3>Smart Retail & Restaurant Ordering Template</h3>
+                    <p>A frictionless mobile development concept designed to digitize local service menus. Supports seamless in-app browsing, instant table ordering, and QR code scan-to-pay engines to completely eliminate customer wait times.</p>
+                </div>
             </div>
-
-            <!-- Project 2 -->
             <div class="card">
-                <span class="badge">Local Service Locator</span>
-                <h3>Surulere Business Locator</h3>
-                <p>A neighborhood-focused mini web engine designed to connect community members with local service providers seamlessly. Simplifies the process of finding vital everyday services like barbering, fashion designing, and more right within the locality.</p>
+                <div class="card-content">
+                    <span class="badge">Community Web</span>
+                    <h3>Hyper-Local Business Directory</h3>
+                    <p>A neighborhood-focused mini web engine built to connect community members with regional service providers seamlessly. Simplifies how everyday consumers discover nearby professionals like fashion designers, barbers, and creators.</p>
+                </div>
             </div>
-
         </div>
+
+        <!-- CATEGORY 2 -->
+        <div class="category-title">Fintech & Asset Trading</div>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <span class="badge">Brand Marketing</span>
+                    <h3>Crypto Branding & Campaign Launchpad</h3>
+                    <p>A strategic marketing framework showcasing end-to-end campaign execution for digital finance brands. Features high-impact visual media rollouts, custom apparel merchandise production, and multi-channel community growth strategies.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <span class="badge">Trading Systems</span>
+                    <h3>Automated Trading Configurations</h3>
+                    <p>Advanced engineering focusing on market mechanics optimization within leading global crypto platforms. Showcases precise technical configuration, liquidity risk metrics, and asset leverage calculations.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORY 3 -->
+        <div class="category-title">Growth Marketing & Custom Development</div>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <span class="badge">Frontend Architecture</span>
+                    <h3>Custom Web Application Development</h3>
+                    <p>A clean, modern placeholder showcasing high-performance web architecture, responsive layouts, and elegant UI/UX design suited for scalable business software.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <span class="badge">Brand Acceleration</span>
+                    <h3>Digital Marketing & Strategy Deployment</h3>
+                    <p>A versatile growth template highlighting targeted multi-platform advertising, search engine optimization, content creation funnels, and continuous brand identity tuning.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </body>
-  </html>
-  
+</html>
